@@ -1,13 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Hero } from "@/components/ui/hero";
+import { Services } from "@/components/ui/services";
+import { Testimonials } from "@/components/ui/testimonials";
+import { About } from "@/components/ui/about";
+import { ContactForm } from "@/components/ui/contact-form";
+import { MainLayout } from "@/layouts/main-layout";
+import { Helmet } from "react-helmet";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <MainLayout>
+      <Helmet>
+        <title>NuFormSocial | Digital Marketing Excellence</title>
+        <meta name="description" content="NuFormSocial delivers innovative digital marketing solutions that transform your brand's online presence and drive measurable results." />
+        <meta name="keywords" content="digital marketing, SEO, social media marketing, content strategy, paid advertising" />
+      </Helmet>
+      
+      <Hero />
+      <Services />
+      <Testimonials />
+      <About />
+      <ContactForm />
+    </MainLayout>
   );
 };
 
