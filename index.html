@@ -1,18 +1,342 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>responsive-marketeer-hub</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NuFormSocial | Digital Marketing Excellence</title>
+  <meta name="description" content="NuFormSocial delivers innovative digital marketing solutions that transform your brand's online presence and drive measurable results.">
+  <meta name="keywords" content="digital marketing, SEO, social media marketing, content strategy, paid advertising">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="navigation">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <img src="logo.png" alt="NuFormSocial" class="logo-img">
+        </a>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="desktop-cta">
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="menu-icon"></i>
+          <i data-lucide="x" class="close-icon hidden"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav class="container">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="btn btn-primary mobile-cta">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="bg-element bg-element-1"></div>
+      <div class="bg-element bg-element-2"></div>
+    </div>
+    
+    <div class="container">
+      <div class="hero-content">
+        <div class="tag">
+          <span>Digital Marketing Solutions</span>
+        </div>
+        
+        <h1>Transform Your Brand's <span class="text-primary">Digital Presence</span></h1>
+        
+        <p class="hero-subtitle">
+          We combine data-driven strategies with creative excellence to deliver marketing solutions that elevate your brand and drive measurable results.
+        </p>
+        
+        <div class="hero-cta">
+          <a href="contact.html" class="btn btn-primary">Get Started</a>
+          <a href="services.html" class="btn btn-outline">Learn More</a>
+        </div>
+        
+        <div class="hero-image">
+          <div class="image-placeholder">
+            <span>Dashboard Preview</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-box">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <p>
+          Comprehensive digital marketing solutions tailored to elevate your brand's online presence and drive measurable results.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" data-index="0">
+          <div class="service-icon">
+            <i data-lucide="globe"></i>
+          </div>
+          <h3>SEO Optimization</h3>
+          <p>Improve your website's visibility in search results with our data-driven SEO strategies.</p>
+        </div>
+        
+        <div class="service-card" data-index="1">
+          <div class="service-icon">
+            <i data-lucide="target"></i>
+          </div>
+          <h3>Paid Advertising</h3>
+          <p>Targeted ad campaigns that maximize ROI across Google, social media, and display networks.</p>
+        </div>
+        
+        <div class="service-card" data-index="2">
+          <div class="service-icon">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Social Media Management</h3>
+          <p>Strategic content creation and community engagement to build your brand's social presence.</p>
+        </div>
+        
+        <div class="service-card" data-index="3">
+          <div class="service-icon">
+            <i data-lucide="mail"></i>
+          </div>
+          <h3>Email Marketing</h3>
+          <p>Personalized email campaigns that nurture leads and drive conversions for your business.</p>
+        </div>
+        
+        <div class="service-card" data-index="4">
+          <div class="service-icon">
+            <i data-lucide="link"></i>
+          </div>
+          <h3>Content Strategy</h3>
+          <p>Compelling content that tells your brand story and establishes thought leadership.</p>
+        </div>
+        
+        <div class="service-card" data-index="5">
+          <div class="service-icon">
+            <i data-lucide="bar-chart"></i>
+          </div>
+          <h3>Analytics & Reporting</h3>
+          <p>Comprehensive insights and data visualization to track performance and guide strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About NuFormSocial</h2>
+        <p>
+          We help brands navigate the digital landscape with data-driven strategies and creative excellence.
+        </p>
+      </div>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Our Mission</h3>
+          <p>
+            At NuFormSocial, we're committed to transforming how brands connect with their audiences in the digital space. We combine analytical precision with creative innovation to create marketing strategies that not only reach target audiences but resonate with them on a deeper level.
+          </p>
+          <p>
+            Founded in 2015, we've helped over 200 businesses across diverse industries establish meaningful digital presences and achieve tangible growth through strategic digital marketing.
+          </p>
+        </div>
+        
+        <div class="about-image">
+          <div class="image-placeholder">
+            <span>Team Image</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="team-section">
+        <h3>Meet Our Team</h3>
+        
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar">
+              <span>AM</span>
+            </div>
+            <h4>Alex Morgan</h4>
+            <p class="member-title">Founder & CEO</p>
+            <p class="member-bio">With over 15 years of experience in digital marketing, Alex leads our strategic vision.</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-avatar">
+              <span>JC</span>
+            </div>
+            <h4>Jamie Chen</h4>
+            <p class="member-title">Creative Director</p>
+            <p class="member-bio">Jamie brings a unique design perspective to every campaign, blending creativity with results.</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-avatar">
+              <span>TW</span>
+            </div>
+            <h4>Taylor Wilson</h4>
+            <p class="member-title">SEO Specialist</p>
+            <p class="member-bio">Taylor's data-driven approach ensures our clients stay ahead of algorithm changes.</p>
+          </div>
+          
+          <div class="team-member">
+            <div class="member-avatar">
+              <span>JS</span>
+            </div>
+            <h4>Jordan Smith</h4>
+            <p class="member-title">Content Strategist</p>
+            <p class="member-bio">Jordan crafts compelling narratives that resonate with target audiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>
+          Ready to transform your digital presence? Contact us today for a free consultation.
+        </p>
+      </div>
+      
+      <div class="contact-container">
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Your Company">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <a href="index.html" class="footer-logo">
+            <img src="logo.png" alt="NuFormSocial" class="logo-img">
+          </a>
+          <p>
+            Digitalize your future with innovative marketing solutions.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-group">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html#seo">SEO Optimization</a></li>
+              <li><a href="services.html#paid">Paid Advertising</a></li>
+              <li><a href="services.html#social">Social Media</a></li>
+              <li><a href="services.html#email">Email Marketing</a></li>
+              <li><a href="services.html#content">Content Strategy</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-group">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-group">
+            <h4>Contact</h4>
+            <ul class="contact-info">
+              <li>
+                <i data-lucide="map-pin"></i>
+                <span>123 Marketing St, Digital City, 45678</span>
+              </li>
+              <li>
+                <i data-lucide="mail"></i>
+                <a href="mailto:info@nuformsocial.com">info@nuformsocial.com</a>
+              </li>
+              <li>
+                <i data-lucide="phone"></i>
+                <a href="tel:+11234567890">+1 (123) 456-7890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> NuFormSocial. All rights reserved.</p>
+        <div class="footer-links-bottom">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
