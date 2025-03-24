@@ -21,7 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif'],
+				display: ['Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -31,11 +31,18 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					light: '#65CAF5',
+					dark: '#6B4DAD'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))'
+					foreground: 'hsl(var(--secondary-foreground))',
+					cornflower: '#6A94D3',
+					slate: '#6A6ADB'
+				},
+				tertiary: {
+					DEFAULT: '#686868', // Cloudy Grey
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -129,6 +136,10 @@ export default {
 				'slide-in-right': 'slide-in-right 0.6s ease-out',
 				'blur-in': 'blur-in 0.6s ease-out',
 				'pulse-slow': 'pulse-slow 4s infinite',
+			},
+			backgroundImage: {
+				'brand-gradient': 'linear-gradient(to right, #65CAF5, #6B4DAD)',
+				'brand-gradient-vertical': 'linear-gradient(to bottom, #65CAF5, #6B4DAD)',
 			}
 		}
 	},

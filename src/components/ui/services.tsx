@@ -46,8 +46,8 @@ const ServiceCard = ({ title, description, icon: Icon, index }: ServiceCardProps
       )}
       style={{ animationDelay: `${0.1 * index}s` }}
     >
-      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-        <Icon className="h-6 w-6 text-primary" />
+      <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary-light/20 to-primary-dark/20 flex items-center justify-center mb-4">
+        <Icon className="h-6 w-6 text-primary-light" />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
@@ -121,7 +121,7 @@ export function Services() {
   ];
 
   return (
-    <section ref={sectionRef} className="section-padding bg-secondary/30" id="services">
+    <section ref={sectionRef} className="section-padding bg-secondary-cornflower/10" id="services">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 opacity-0">Our Services</h2>

@@ -39,7 +39,7 @@ const ContactPage = () => {
         <meta name="keywords" content="contact, digital marketing agency, marketing consultation, SEO services" />
       </Helmet>
       
-      <div className="pt-32 pb-20 bg-secondary/30">
+      <div className="pt-32 pb-20 bg-gradient-to-r from-primary-light/10 to-primary-dark/10">
         <div className="container mx-auto text-center max-w-3xl">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-lg text-muted-foreground">
@@ -63,27 +63,27 @@ const ContactPage = () => {
               </div>
               
               <div className="flex items-start">
-                <Mail className="h-5 w-5 text-primary mr-3 mt-1" />
+                <Mail className="h-5 w-5 text-primary-light mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <a href="mailto:info@nuformsocial.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="mailto:info@nuformsocial.com" className="text-muted-foreground hover:text-primary-light transition-colors">
                     info@nuformsocial.com
                   </a>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <Phone className="h-5 w-5 text-primary mr-3 mt-1" />
+                <Phone className="h-5 w-5 text-primary-light mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <a href="tel:+11234567890" className="text-muted-foreground hover:text-primary transition-colors">
+                  <a href="tel:+11234567890" className="text-muted-foreground hover:text-primary-light transition-colors">
                     +1 (123) 456-7890
                   </a>
                 </div>
               </div>
               
               <div className="flex items-start">
-                <MapPin className="h-5 w-5 text-primary mr-3 mt-1" />
+                <MapPin className="h-5 w-5 text-primary-light mr-3 mt-1" />
                 <div>
                   <h4 className="font-medium">Office</h4>
                   <address className="text-muted-foreground not-italic">
@@ -109,6 +109,6 @@ const ContactPage = () => {
       </div>
     </MainLayout>
   );
-};
+}
 
 export default ContactPage;

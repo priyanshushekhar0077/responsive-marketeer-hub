@@ -31,20 +31,20 @@ export function Hero() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/3 -right-48 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl animate-pulse-slow" style={{ animationDelay: "1s" }}></div>
+        <div className="absolute top-1/4 -left-48 w-96 h-96 bg-primary-light/20 rounded-full filter blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-1/3 -right-48 w-96 h-96 bg-primary-dark/20 rounded-full filter blur-3xl animate-pulse-slow" style={{ animationDelay: "1s" }}></div>
       </div>
       
       <div className="container mx-auto px-4 md:px-6 z-10 pt-20">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto stagger-animation">
-          <div className="inline-block mb-6 px-6 py-2 bg-primary/10 rounded-full">
-            <span className="text-sm font-medium text-primary animate-blur-in">
+          <div className="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-primary-light/20 to-primary-dark/20 rounded-full">
+            <span className="text-sm font-medium text-brand-gradient animate-blur-in">
               Digital Marketing Solutions
             </span>
           </div>
           
           <h1 ref={heroRef} className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight md:leading-tight lg:leading-tight mb-6 text-balance animate-blur-in">
-            Transform Your Brand's <span className="text-primary">Digital Presence</span>
+            Transform Your Brand's <span className="text-brand-gradient">Digital Presence</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-8 text-balance animate-blur-in">
@@ -52,22 +52,22 @@ export function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-blur-in">
-            <Button className="rounded-full px-8 py-6 text-base" size="lg">
+            <Button className="rounded-full px-8 py-6 text-base bg-primary-light hover:bg-primary-dark" size="lg">
               Get Started
             </Button>
-            <Button variant="outline" className="rounded-full px-8 py-6 text-base" size="lg">
+            <Button variant="outline" className="rounded-full px-8 py-6 text-base border-primary-light text-primary-light hover:bg-primary-light/10" size="lg">
               Learn More
             </Button>
           </div>
           
           <div className="mt-16 w-full max-w-4xl mx-auto animate-slide-up opacity-0" style={{ animationDelay: "0.8s" }}>
             <div className={cn(
-              "w-full aspect-video bg-white/50 rounded-lg shadow-xl overflow-hidden",
+              "w-full aspect-video bg-gradient-to-br from-white/70 to-secondary-cornflower/10 rounded-lg shadow-xl overflow-hidden",
               "hover-lift border border-gray-200",
               "flex items-center justify-center"
             )}>
-              <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-                <span className="text-muted-foreground text-lg">Dashboard Preview</span>
+              <div className="w-full h-full flex items-center justify-center">
+                <span className="text-tertiary text-lg">Dashboard Preview</span>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function Hero() {
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-pulse-slow">
         <span className="text-sm text-muted-foreground mb-2">Scroll</span>
         <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-          <div className="w-1 h-2 bg-muted-foreground rounded-full mt-2 animate-bounce"></div>
+          <div className="w-1 h-2 bg-primary-light rounded-full mt-2 animate-bounce"></div>
         </div>
       </div>
     </div>

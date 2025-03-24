@@ -67,7 +67,7 @@ export function ContactForm() {
   };
 
   return (
-    <section className="section-padding bg-secondary/30" id="contact">
+    <section className="section-padding bg-secondary-cornflower/10" id="contact">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -80,7 +80,7 @@ export function ContactForm() {
           ref={formRef}
           className="max-w-2xl mx-auto opacity-0 duration-500"
         >
-          <div className="glassmorphism rounded-xl p-8 md:p-10">
+          <div className="glassmorphism rounded-xl p-8 md:p-10 border-primary-light/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
@@ -92,7 +92,7 @@ export function ContactForm() {
                     name="name"
                     placeholder="John Doe"
                     required
-                    className="bg-white/50 border-gray-200 focus:border-primary transition-all duration-300"
+                    className="bg-white/50 border-gray-200 focus:border-primary-light transition-all duration-300"
                   />
                 </div>
                 
@@ -106,7 +106,7 @@ export function ContactForm() {
                     type="email"
                     placeholder="john@example.com"
                     required
-                    className="bg-white/50 border-gray-200 focus:border-primary transition-all duration-300"
+                    className="bg-white/50 border-gray-200 focus:border-primary-light transition-all duration-300"
                   />
                 </div>
               </div>
@@ -119,7 +119,7 @@ export function ContactForm() {
                   id="company"
                   name="company"
                   placeholder="Your Company"
-                  className="bg-white/50 border-gray-200 focus:border-primary transition-all duration-300"
+                  className="bg-white/50 border-gray-200 focus:border-primary-light transition-all duration-300"
                 />
               </div>
               
@@ -133,14 +133,14 @@ export function ContactForm() {
                   placeholder="Tell us about your project..."
                   rows={5}
                   required
-                  className="bg-white/50 border-gray-200 focus:border-primary resize-none transition-all duration-300"
+                  className="bg-white/50 border-gray-200 focus:border-primary-light resize-none transition-all duration-300"
                 />
               </div>
               
               <Button 
                 type="submit" 
                 className={cn(
-                  "w-full rounded-lg py-6",
+                  "w-full rounded-lg py-6 bg-primary-light hover:bg-primary-dark",
                   "transition-all duration-300",
                   isSubmitting && "opacity-80"
                 )}
