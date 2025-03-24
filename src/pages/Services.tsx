@@ -1,4 +1,3 @@
-
 import { MainLayout } from "@/layouts/main-layout";
 import { Services } from "@/components/ui/services";
 import { ContactForm } from "@/components/ui/contact-form";
@@ -28,7 +27,8 @@ const ServiceDetail = ({
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fade-in");
-          entry.target.style.opacity = "1";
+          // Fix the style property issue
+          entry.target.setAttribute("style", "opacity: 1");
         }
       },
       { threshold: 0.1 }

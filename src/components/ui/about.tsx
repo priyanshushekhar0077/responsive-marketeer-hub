@@ -41,7 +41,8 @@ export function About() {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fade-in");
-          entry.target.style.opacity = "1";
+          // Use setAttribute instead of setting style directly
+          entry.target.setAttribute("style", "opacity: 1");
         }
       },
       { threshold: 0.1 }

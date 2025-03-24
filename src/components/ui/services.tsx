@@ -18,7 +18,8 @@ const ServiceCard = ({ title, description, icon: Icon, index }: ServiceCardProps
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-slide-up");
-          entry.target.style.opacity = "1";
+          // Use setAttribute instead of setting style directly
+          entry.target.setAttribute("style", "opacity: 1");
         }
       },
       { threshold: 0.1 }
@@ -65,8 +66,9 @@ export function Services() {
             const headings = sectionRef.current.querySelectorAll('h2, .subtitle');
             headings.forEach((heading, i) => {
               heading.classList.add("animate-slide-up");
-              heading.style.opacity = "1";
-              heading.style.animationDelay = `${0.1 * i}s`;
+              // Use setAttribute instead of directly setting style
+              heading.setAttribute("style", "opacity: 1");
+              heading.setAttribute("style", `animation-delay: ${0.1 * i}s`);
             });
           }
         }

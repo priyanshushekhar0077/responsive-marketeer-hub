@@ -16,7 +16,8 @@ export function ContactForm() {
       ([entry]) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-fade-in");
-          entry.target.style.opacity = "1";
+          // Use setAttribute instead of setting style directly
+          entry.target.setAttribute("style", "opacity: 1");
         }
       },
       { threshold: 0.1 }
@@ -33,22 +34,36 @@ export function ContactForm() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+      // In a real app, this would call an API endpoint
+      // For demo, we'll just simulate an API call
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      // API response simulation
       toast({
         title: "Message sent successfully!",
         description: "We'll get back to you as soon as possible.",
       });
-      setIsSubmitting(false);
       
       // Reset form
-      const form = e.target as HTMLFormElement;
       form.reset();
-    }, 1500);
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -74,6 +89,7 @@ export function ContactForm() {
                   </label>
                   <Input
                     id="name"
+                    name="name"
                     placeholder="John Doe"
                     required
                     className="bg-white/50 border-gray-200 focus:border-primary transition-all duration-300"
@@ -86,6 +102,7 @@ export function ContactForm() {
                   </label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
                     placeholder="john@example.com"
                     required
@@ -100,6 +117,7 @@ export function ContactForm() {
                 </label>
                 <Input
                   id="company"
+                  name="company"
                   placeholder="Your Company"
                   className="bg-white/50 border-gray-200 focus:border-primary transition-all duration-300"
                 />
@@ -111,6 +129,7 @@ export function ContactForm() {
                 </label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Tell us about your project..."
                   rows={5}
                   required
